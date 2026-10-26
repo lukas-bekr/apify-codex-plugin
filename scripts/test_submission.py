@@ -34,6 +34,8 @@ class SubmissionArchiveTests(unittest.TestCase):
         archive, report = BUILDER.build(self.root)
         with ZipFile(archive) as zipped:
             self.assertEqual(set(zipped.namelist()), {"apify/plugin.json", "apify/mcp.json", "apify/assets/logo.png"})
+            manifest = json.loads(zipped.read("apify/plugin.json"))
+            self.assertEqual(manifest["extensions"]["com.openai"]["publication"]["countries"], [])
             mcp = json.loads(zipped.read("apify/mcp.json"))
             self.assertIn("client=openai", mcp["mcpServers"]["apify"]["url"])
             self.assertEqual(mcp["mcpServers"]["apify"]["extensions"]["com.openai"]["auth"]["type"], "oauth")

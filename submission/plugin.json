@@ -85,6 +85,7 @@
         }
       },
       "publication": {
+        "countries": [],
         "release_notes": "Initial MCP-only submission candidate with a fixed catalog of 13 Apify-maintained Actors and private Actor development, result, log, and documentation tools. Skills and lifecycle hooks are excluded from the public upload."
       }
     }

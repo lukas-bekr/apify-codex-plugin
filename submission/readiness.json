@@ -8,7 +8,7 @@
     "Record, inspect, host, and verify the real demo video; demo_recording_url is intentionally absent.",
     "Prepare and verify dedicated reviewer access in secure portal fields, outside this repository and ZIP.",
     "Confirm commerce classification for metered existing credits and any overage or recharge behavior before adding a commerce declaration.",
-    "Confirm supported countries; publication.countries is intentionally absent and must be checked in the portal.",
+    "Verify that the portal imports publication.countries=[] as all portal-supported countries, as explicitly requested by the publisher.",
     "Have the authorized owner confirm that the linked privacy policy and terms cover this plugin's actual data flows and complete attestations.",
     "Verify the selected publisher identity, domain, authentication, required scans, and saved metadata in the submission portal.",
     "Obtain OpenAI's classification of the private programmable runtime and the selected third-party site operations.",

@@ -54,10 +54,11 @@ playback and reviewer access before adding `review.demo_recording_url`.
 
 The four listing URLs identify Apify and its existing support and policies.
 The authorized owner still needs to verify coverage of the submitted data
-flows. Country targeting, commerce declarations, the demo URL, and legal
-attestations are intentionally not invented. Reviewer credentials belong only
-in secure portal fields. An omitted country list must be checked in the portal;
-it does not mean a country choice has been made.
+flows. Commerce declarations, the demo URL, and legal attestations remain
+unresolved. Reviewer credentials belong only in secure portal fields. The
+publisher explicitly selected all portal-supported countries: the portable
+manifest records `publication.countries: []` to remove country restrictions.
+Verify that choice in the saved portal draft before submission.
 
 ## Repository rename
 
